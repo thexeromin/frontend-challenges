@@ -9,3 +9,12 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 ![](./preview.jpg)
 
 ### What I learned
+
+Finding spcific child node of an node.
+
+```js
+// Key learnings in JavaScript
+
+// gets specific child node
+node.querySelector("img");
+```

@@ -11,7 +11,7 @@ body {
     background-size: 100%;
 }
 
-.accordion {
+.accordion_container {
     background-color: white;
     margin: 10rem 1.5rem 0 1.5rem;
     padding: 1.5rem;
@@ -26,11 +26,47 @@ body {
     gap: 1rem;
 }
 
+.heading h1 {
+    color: hsl(292, 42%, 14%);
+}
+
 .heading img {
     width: 2rem;
     height: 2rem;
 }
 
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+    padding: 1.5rem 0;
+    border-bottom: 2px solid hsl(275, 100%, 97%);
+    cursor: pointer;
+}
+
+.accordion h2 {
+    font-size: 1.3rem;
+    font-family: "Work Sans", sans-serif;
+    color: hsl(292, 42%, 14%);
+}
+
+.accordion p {
+    font-size: 1rem;
+    font-family: "Work Sans", sans-serif;
+}
+
+.panel {
+    padding: 18px 0;
+    display: none;
+    overflow: hidden;
+    border-bottom: 2px solid hsl(275, 100%, 97%);
+}
+
+.accordion:last-child,
+.panel:last-child {
+    border: 0;
+}
 
 /* md screens */
 @media (min-width: 768px) {
@@ -42,7 +78,7 @@ body {
         flex-direction: column;
     }
 
-    .accordion {
+    .accordion_container {
         max-width: 42rem;
         margin-top: 14rem;
     }
