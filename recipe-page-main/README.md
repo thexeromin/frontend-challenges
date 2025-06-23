@@ -11,7 +11,6 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### What I learned
 
 I learned about how to add gaps between bullated points/counter and content of list.
-To see how you can add code snippets, see below:
 
 ```css
 /* Key Learnings in CSS  */
