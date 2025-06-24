@@ -64,7 +64,8 @@ body {
 }
 
 .accordion:last-child,
-.panel:last-child {
+.panel:last-child, 
+.border-none {
     border: 0;
 }
 
