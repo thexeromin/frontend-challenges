@@ -28,19 +28,24 @@ main {
   display: flex;
   flex-direction: column;
   padding: 1.3rem;
+  align-items: stretch;
 }
 
 .product-card figure img {
-  display: block;
   width: 100%;
   height: 100%;
   border-radius: 1rem 1rem 0 0;
+  display: block;
+  object-fit: cover;
 }
 
 .product-card section {
   background-color: var(--white);
   padding: 2rem;
   border-radius: 0 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .product-card section .subtitle {
@@ -50,16 +55,14 @@ main {
   letter-spacing: 0.4rem;
   color: var(--grey);
   font-size: 1rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .product-card section h1 {
   font-family: "Fraunces", serif;
   font-optical-sizing: auto;
   font-size: 2rem;
-  margin-bottom: 1rem;
 }
-
 
 .product-description {
   font-family: "Montserrat", sans-serif;
@@ -67,7 +70,6 @@ main {
   color: var(--grey);
   font-size: 0.9rem;
   text-align: start;
-  margin-bottom: 1.3rem;
 }
 
 .price-wrapper {
@@ -75,17 +77,16 @@ main {
   justify-content: start;
   align-items: center;
   gap: 1.5rem;
-  margin-bottom: 1rem;
 }
 
-.price-wrapper p:first-child {
+.price-wrapper .current_price {
   font-family: "Fraunces", serif;
   font-optical-sizing: auto;
   font-size: 1.8rem;
   color: var(--green-500);
 }
 
-.price-wrapper p:last-child {
+.price-wrapper .original-price {
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
   font-size: 1rem;
@@ -102,7 +103,6 @@ main {
   font-optical-sizing: auto;
   font-weight: 700;
   color: var(--white);
-  outline: none;
   border: none;
   border-radius: 0.5rem;
   display: flex;
@@ -115,4 +115,32 @@ main {
 
 .product-card section button:hover {
   background-color: var(--green-700);
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    flex-direction: row;
+    max-width: 46rem;
+  }
+
+  .product-card figure,
+  .product-card section {
+    flex: 1;
+  }
+
+  .product-card figure img {
+    border-radius: 1rem 0 0 1rem;
+  }
+  .product-card section {
+    border-radius: 0 1rem 1rem 0;
+    justify-content: space-between;
+  }
+
+  .product-card section h1 {
+    font-size: 2.5rem;
+  }
+
+  .product-description {
+    font-size: 1rem;
+  }
 }

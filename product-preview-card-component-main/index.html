@@ -39,13 +39,20 @@
     <main>
       <article class="product-card">
         <figure>
-          <img src="./images/image-product-mobile.jpg" alt="product-image" />
+          <picture>
+            <source
+              srcset="./images/image-product-desktop.jpg"
+              media="(min-width: 768px)"
+            />
+            <img src="./images/image-product-mobile.jpg" alt="product-image" />
+          </picture>
         </figure>
 
         <section>
-          <p class="subtitle">Perfume</p>
-
-          <h1>Gabrielle Essence Eau De Parfum</h1>
+          <header>
+            <p class="subtitle">Perfume</p>
+            <h1>Gabrielle Essence Eau De Parfum</h1>
+          </header>
 
           <p class="product-description">
             A floral, solar and voluptuous interpretation composed by Olivier
@@ -53,14 +60,14 @@
           </p>
 
           <div class="price-wrapper">
-            <p>$149.99</p>
-            <p>$169.99</p>
+            <p><strong class="current_price">$149.99</strong></p>
+            <p><span class="original-price">$169.99</span></p>
           </div>
 
           <div>
             <button>
-              <img src="./images/icon-cart.svg" alt="Cart-Icon" />
-              Add to Cart
+              <img src="./images/icon-cart.svg" alt="" aria-hidden="true" />
+              <span>Add to Cart</span>
             </button>
           </div>
         </section>
