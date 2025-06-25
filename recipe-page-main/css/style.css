@@ -1,195 +1,196 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: hsl(30, 54%, 90%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container {
-    background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 .recipe_image img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .content_wrapper {
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .content_wrapper h1 {
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.5rem;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
 }
 
 .content_wrapper p {
-    font-family: "Outfit", sans-serif;
-    color: hsl(30, 10%, 34%);
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
 }
 
 .preparation_details {
-    background-color: hsl(330, 100%, 98%);
-    padding: 1rem;
-    border-radius: 1rem;
+  background-color: hsl(330, 100%, 98%);
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .preparation_details h2 {
-    font-family: "Outfit", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 .preparation_details ul {
-    list-style-type: none;
-    list-style-position: inside;
-    padding: 1rem 0rem;
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 1rem 0rem;
 }
 
 .preparation_details li {
-    font-family: "Outfit", sans-serif;
-    padding-bottom: 0.5rem;
-    color: hsl(30, 10%, 34%);
+  font-family: "Outfit", sans-serif;
+  padding-bottom: 0.5rem;
+  color: hsl(30, 10%, 34%);
 }
 
 .preparation_details li:last-child {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .preparation_details li::before {
-    content: "•";
-    color: hsl(30, 10%, 34%);
-    font-size: 1.2rem;
-    display: inline-block;
-    width: 1em;
-    margin-right: 0.8rem;
+  content: "•";
+  color: hsl(30, 10%, 34%);
+  font-size: 1.2rem;
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.8rem;
 }
 
 .preparation_details li span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .info_card h2 {
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
 }
 
 .info_card ul,
 ol {
-    list-style-type: none;
-    list-style-position: inside;
+  list-style-type: none;
+  list-style-position: inside;
 }
 
 .info_card ol {
-    counter-reset: item;
+  counter-reset: item;
 }
 
 .info_card ol li {
-    counter-increment: item;
-    position: relative;
-    padding-left: 2rem;
+  counter-increment: item;
+  position: relative;
+  padding-left: 2rem;
 }
 
 .info_card ol li::before {
-    content: counter(item) ".";
-    position: absolute;
-    left: 0;
-    color: hsl(30, 10%, 34%);
-    width: 1.5rem;
-    font-weight: bold;
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  color: hsl(30, 10%, 34%);
+  width: 1.5rem;
+  font-weight: bold;
 }
 
 .info_card p {
-    color: hsl(30, 10%, 34%);
-    margin: 1rem 0;
+  color: hsl(30, 10%, 34%);
+  margin: 1rem 0;
 }
 
 .info_card li {
-    font-family: "Outfit", sans-serif;
-    padding-top: 0.5rem;
-    color: hsl(30, 10%, 34%);
+  font-family: "Outfit", sans-serif;
+  padding-top: 0.5rem;
+  color: hsl(30, 10%, 34%);
 }
 
 .info_card ul li::before {
-    content: "•";
-    color: hsl(30, 10%, 34%);
-    font-size: 1.2rem;
-    display: inline-block;
-    width: 1em;
-    margin-right: 0.8rem;
+  content: "•";
+  color: hsl(30, 10%, 34%);
+  font-size: 1.2rem;
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.8rem;
 }
 
 .info_card li span {
-    font-weight: bold;
-    color: hsl(24, 5%, 18%);
+  font-weight: bold;
+  color: hsl(24, 5%, 18%);
 }
 
 .info_card table {
-    width: 100%;
+  width: 100%;
 }
 
 .info_card table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 .info_card table tr td {
-    padding: 1rem;
-    border-bottom: 2px solid hsl(30, 18%, 87%);
-    font-family: "Outfit", sans-serif;
-    color: hsl(30, 10%, 34%);
+  padding: 1rem;
+  border-bottom: 2px solid hsl(30, 18%, 87%);
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
 }
 
 .info_card table tr td:last-child {
-    font-weight: bold;
-    color: hsl(14, 45%, 36%);
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
 }
 
 .info_card .divider {
-    width: 100%;
-    height: 1px;
-    background-color: hsl(30, 18%, 87%);
-    margin-top: 2rem;
+  width: 100%;
+  height: 1px;
+  background-color: hsl(30, 18%, 87%);
+  margin-top: 2rem;
 }
 
 /* md screens */
 @media (min-width: 768px) {
-    body {
-        padding: 3rem 0;
-    }
+  body {
+    padding: 3rem 0;
+  }
 
-    .container {
-        max-width: 42rem;
-        border-radius: 1.5rem;
-    }
+  .container {
+    max-width: 42rem;
+    border-radius: 1.5rem;
+  }
 
-    .recipe_image {
-        padding: 1.5rem;
-    }
+  .recipe_image {
+    padding: 1.5rem;
+  }
 
-    .recipe_image img {
-        border-radius: 1rem;
-    }
+  .recipe_image img {
+    border-radius: 1rem;
+  }
 
-    .content_wrapper {
-        padding: 1.5rem;
-    }
+  .content_wrapper {
+    padding: 1.5rem;
+  }
 }
 
 .attribution {
-    margin-top: 2rem;
-    /* font-family: "Young Serif", serif; */
-    font-family: "Outfit", sans-serif;
-    font-size: 1rem;
+  margin-top: 2rem;
+  /* font-family: "Young Serif", serif; */
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
 }
