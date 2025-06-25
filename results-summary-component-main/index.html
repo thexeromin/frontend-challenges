@@ -19,7 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -33,9 +33,71 @@
     </style>
   </head>
   <body>
-    Your Result 76 of 100 Great You scored higher than 65% of the people who
-    have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61
-    / 100 Visual 72 / 100 Continue
+    <main>
+      <article class="summary-container">
+        <section class="overview">
+          <h2>Your Result</h2>
+
+          <div class="result-circle">
+            <h1>76</h1>
+            <p>of 100</p>
+          </div>
+
+          <div class="result-text">
+            <h3>Great</h3>
+
+            <p>
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </section>
+
+        <section class="summary">
+          <h2>Summary</h2>
+
+          <dl class="summary-items">
+            <div>
+              <dt>
+                <img src="./assets/images/icon-reaction.svg" alt="" />
+                <strong>Reaction</strong>
+              </dt>
+
+              <dd><strong>80</strong> / 100</dd>
+            </div>
+
+            <div>
+              <dt>
+                <img src="./assets/images/icon-memory.svg" alt="" />
+                <strong>Memory</strong>
+              </dt>
+
+              <dd><strong>92</strong> / 100</dd>
+            </div>
+
+            <div>
+              <dt>
+                <img src="./assets/images/icon-verbal.svg" alt="" />
+                <strong>Verbal</strong>
+              </dt>
+
+              <dd><strong>61</strong> / 100</dd>
+            </div>
+
+            <div>
+              <dt>
+                <img src="./assets/images/icon-visual.svg" alt="" />
+                <strong>Visual</strong>
+              </dt>
+
+              <dd><strong>72</strong> / 100</dd>
+            </div>
+          </dl>
+
+          <button type="button">Continue</button>
+        </section>
+      </article>
+    </main>
 
     <div class="attribution">
       Challenge by
