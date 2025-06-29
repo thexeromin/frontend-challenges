@@ -9,6 +9,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 15px;
 }
 
 *,
@@ -22,7 +23,6 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-size: 15px;
 }
 
 header {
@@ -91,7 +91,7 @@ nav .nav__links {
   gap: 1.5em;
 }
 
-.hero div h1 {
+.hero .hero__info h1 {
   font-size: 3em;
   font-weight: 800;
   line-height: 1em;
@@ -208,4 +208,75 @@ nav .nav__links {
 
 .attribution {
   margin: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: 0 10em;
+  }
+
+  header {
+    margin: 1em 10em;
+  }
+
+  .menu__icon {
+    display: none;
+  }
+
+  nav .nav__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+  }
+
+  nav .nav__links a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    font-size: 0.9em;
+  }
+
+  .main__content {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 2em;
+  }
+  .hero {
+    justify-content: space-between;
+    flex: 2;
+  }
+
+  .latest__news {
+    flex: 1;
+  }
+
+  .hero .hero__info {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4em;
+  }
+
+  .hero .hero__info h1 {
+    flex: 1;
+    font-size: 3.5em;
+  }
+
+  .hero .hero__info div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .trending__news {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .trending__news .news__card {
+    flex: 1;
+  }
 }
