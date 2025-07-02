@@ -39,11 +39,22 @@
           <img src="./assets/images/logo.svg" alt="Logo" />
         </div>
 
-        <button class="menu__icon" aria-label="Open menu">
+        <button class="menu__icon" aria-label="Open menu" onclick="openNav();">
           <img src="./assets/images/icon-menu.svg" alt="" />
         </button>
 
         <div class="nav__links">
+          <a href="#">Home</a>
+          <a href="#">New</a>
+          <a href="#">Popular</a>
+          <a href="#">Trending</a>
+          <a href="#">Categories</a>
+        </div>
+
+        <div class="sidenav" id="mySidenav">
+          <button class="closebtn" onclick="closeNav()">
+            <img src="./assets/images/icon-menu-close.svg" alt="" />
+          </button>
           <a href="#">Home</a>
           <a href="#">New</a>
           <a href="#">Popular</a>
@@ -159,6 +170,17 @@
         </article>
       </section>
     </main>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "80%";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
 
     <footer class="attribution">
       Challenge by

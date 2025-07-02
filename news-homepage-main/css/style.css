@@ -51,6 +51,42 @@ nav .nav__links {
   display: none;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 10em;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: var(--soft-red);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+  background-color: white;
+  border: none;
+  padding: 2em;
+}
+
 .container {
   padding: 1em;
   display: flex;
@@ -212,7 +248,7 @@ nav .nav__links {
 
 @media (min-width: 768px) {
   .container {
-    margin: 0 10em;
+    margin: 0 5em;
   }
 
   header {
@@ -278,5 +314,11 @@ nav .nav__links {
 
   .trending__news .news__card {
     flex: 1;
+  }
+}
+
+@media(min-width: 1024px) {
+  .container {
+    margin: 0 10em;
   }
 }
